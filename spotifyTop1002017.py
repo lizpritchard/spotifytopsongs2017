@@ -66,8 +66,10 @@ musicFeatures = topSongs.drop(["name", "artists", "id", "duration_ms"], axis=1)
 
 # correlation heatmap of song features 
 plt.figure(figsize = (16,5))
-sns.heatmap(musicFeatures.corr(), cmap="Spectral", annot=True)
+sns.heatmap(musicFeatures.corr(), cmap="rainbow", annot=True)
 plt.show()
+
+# dance songs also tend to be loud
 
 #%%
 """

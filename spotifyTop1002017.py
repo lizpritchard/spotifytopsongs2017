@@ -4,7 +4,7 @@ Created on Sun Jun 17 16:14:29 2018
 
 @author: Liz Pritchard
 
-Project: Spotify Top 100 Songs of 2017 Data Exploration
+Project: Spotify Top 100 Songs of 2017 Data Exploration from Kaggle
 """
 #%%
 

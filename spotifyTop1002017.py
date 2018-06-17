@@ -62,7 +62,12 @@ plt.show()
 #%%
 # new dataset - music features 
 
-musicFeatures = topSongs.drop(["name", "artist", "id"], axis=1)
+musicFeatures = topSongs.drop(["name", "artists", "id", "duration_ms"], axis=1)
+
+# correlation heatmap of song features 
+plt.figure(figsize = (16,5))
+sns.heatmap(musicFeatures.corr(), cmap="Spectral", annot=True)
+plt.show()
 
 #%%
 """

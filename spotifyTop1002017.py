@@ -71,6 +71,14 @@ plt.show()
 
 # dance songs also tend to be loud
 
+# scatter plot of loudness and danceability
+N = 100
+x = musicFeatures["danceability"]
+y = musicFeatures["loudness"]
+plt.scatter(x, y, alpha=0.5)
+plt.show()
+
+
 #%%
 """
 Ideas for future exploration: 
